@@ -77,9 +77,6 @@ int main() {
             numProcesses--;
         }
     }
-    if (numProcesses == 0)
-    {
-        printf("所以进程已结束！");
-    }
+    printf("所有进程已结束！");
     return 0;
 }
