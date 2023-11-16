@@ -1,20 +1,23 @@
 #include<stdio.h>
+#include "iostream"
+#include <string>
+using namespace std;
 
 typedef struct order
 {
-	char op;
-	int page;
-	int address;
+	string Op;
+	int Page;
+	int Address;
 };
 
 typedef struct page {
-	int pageNumber;
-	int flag;
-	int pageNo;
+	int PageNumber;
+	int Flag;
+	int PageNo;
 	int Fflag;
-	int location;
+	int Location;
 	int address(int i)
 	{
-		return pageNo * 1024 + i;
+		return PageNo * 1024 + i;
 	}
 };
